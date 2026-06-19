@@ -1,6 +1,6 @@
-package com.example.doghunt.service;
+package com.example.dogseek.service;
 
-import com.example.doghunt.model.GameMap;
+import com.example.dogseek.model.GameMap;
 import org.springframework.stereotype.Service;
 
 @Service

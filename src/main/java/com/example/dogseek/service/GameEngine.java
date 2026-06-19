@@ -1,11 +1,11 @@
-package com.example.doghunt.service;
+package com.example.dogseek.service;
 
-import com.example.doghunt.model.Edge;
-import com.example.doghunt.model.GameMap;
-import com.example.doghunt.model.Item;
-import com.example.doghunt.model.ItemTemplate;
-import com.example.doghunt.model.Node;
-import com.example.doghunt.model.PlayerState;
+import com.example.dogseek.model.Edge;
+import com.example.dogseek.model.GameMap;
+import com.example.dogseek.model.Item;
+import com.example.dogseek.model.ItemTemplate;
+import com.example.dogseek.model.Node;
+import com.example.dogseek.model.PlayerState;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 

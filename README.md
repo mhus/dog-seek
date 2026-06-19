@@ -62,7 +62,7 @@ bevor er dich findet und beißt!
 mvn clean package -DskipTests
 
 # Spiel starten
-java -jar target/dog-hunt-1.0-SNAPSHOT.jar
+java -jar target/dog-seek-1.0-SNAPSHOT.jar
 ```
 
 Oder direkt mit Spring Boot:
@@ -74,12 +74,12 @@ mvn spring-boot:run
 ## 🏗️ Projektstruktur
 
 ```
-dog-hunt/
+dog-seek/
 ├── pom.xml
 ├── README.md
 └── src/main/
-    ├── java/com/example/doghunt/
-    │   ├── DogHuntApplication.java      # Spring-Boot-Einstiegspunkt
+    ├── java/com/example/dogseek/
+    │   ├── DogSeekApplication.java      # Spring-Boot-Einstiegspunkt
     │   ├── model/                       # Datenmodelle
     │   │   ├── Node.java                # Raum (Knoten im Graphen)
     │   │   ├── Edge.java                # Verbindung zwischen Räumen

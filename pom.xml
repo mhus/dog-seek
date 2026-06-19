@@ -11,9 +11,9 @@
   </parent>
 
   <groupId>com.example</groupId>
-  <artifactId>dog-hunt</artifactId>
+  <artifactId>dog-seek</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>dog-hunt</name>
+  <name>dog-seek</name>
   <description>Dog Hunt Text Game with Spring Boot</description>
 
   <properties>
@@ -56,7 +56,7 @@
         <artifactId>native-maven-plugin</artifactId>
         <version>0.10.2</version>
         <configuration>
-          <mainClass>com.example.doghunt.DogHuntApplication</mainClass>
+          <mainClass>com.example.dogseek.DogSeekApplication</mainClass>
         </configuration>
       </plugin>
     </plugins>

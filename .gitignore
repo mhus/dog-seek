@@ -71,5 +71,5 @@ HELP.md
 *~
 
 # Native Binary selbst (in target/ schon ausgeschlossen, hier der Vollständigkeit halber)
-/dog-hunt
-/dog-hunt.exe
+/dog-seek
+/dog-seek.exe

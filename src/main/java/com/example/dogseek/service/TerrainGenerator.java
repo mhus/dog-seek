@@ -1,6 +1,6 @@
-package com.example.doghunt.service;
+package com.example.dogseek.service;
 
-import com.example.doghunt.model.*;
+import com.example.dogseek.model.*;
 import org.springframework.stereotype.Service;
 import jakarta.annotation.PostConstruct;
 

@@ -1,4 +1,4 @@
-package com.example.doghunt.model;
+package com.example.dogseek.model;
 
 import java.util.ArrayList;
 import java.util.List;

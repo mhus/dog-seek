@@ -1,5 +1,5 @@
 #!/bin/bash
-# build.sh - Build-Script für das dog-hunt Spiel
+# build.sh - Build-Script für das dog-seek Spiel
 # Baut wahlweise die JVM-JAR und/oder eine native GraalVM-Binary.
 #
 # Verwendung:
@@ -79,10 +79,10 @@ case "$MODE" in
         print_header "JVM-Build (Spring Boot Fat-JAR)"
         mvn clean package $SKIP_FLAG
         echo ""
-        echo "Fertig: target/dog-hunt-1.0-SNAPSHOT.jar"
-        echo "Starten mit:  java -jar target/dog-hunt-1.0-SNAPSHOT.jar"
+        echo "Fertig: target/dog-seek-1.0-SNAPSHOT.jar"
+        echo "Starten mit:  java -jar target/dog-seek-1.0-SNAPSHOT.jar"
         if [ "$RUN_AFTER" = "true" ]; then
-            java -jar target/dog-hunt-1.0-SNAPSHOT.jar
+            java -jar target/dog-seek-1.0-SNAPSHOT.jar
         fi
         ;;
     native)
@@ -90,10 +90,10 @@ case "$MODE" in
         print_header "Native-Build (GraalVM Native Image)"
         mvn clean $SKIP_FLAG native:compile
         echo ""
-        echo "Fertig: target/dog-hunt"
-        echo "Starten mit:  ./target/dog-hunt"
+        echo "Fertig: target/dog-seek"
+        echo "Starten mit:  ./target/dog-seek"
         if [ "$RUN_AFTER" = "true" ]; then
-            ./target/dog-hunt
+            ./target/dog-seek
         fi
         ;;
     all)
@@ -101,16 +101,16 @@ case "$MODE" in
         print_header "1/2 JVM-Build"
         mvn clean package $SKIP_FLAG
         echo ""
-        echo "JVM-Artefakt: target/dog-hunt-1.0-SNAPSHOT.jar"
+        echo "JVM-Artefakt: target/dog-seek-1.0-SNAPSHOT.jar"
 
         print_header "2/2 Native-Build"
         mvn clean $SKIP_FLAG native:compile
         echo ""
-        echo "Native-Binary: target/dog-hunt"
+        echo "Native-Binary: target/dog-seek"
 
         if [ "$RUN_AFTER" = "true" ]; then
             print_header "Starte native Binary"
-            ./target/dog-hunt
+            ./target/dog-seek
         fi
         ;;
     help|--help|-h)

@@ -1,9 +1,9 @@
-package com.example.doghunt.service;
+package com.example.dogseek.service;
 
-import com.example.doghunt.model.ConnectionTemplate;
-import com.example.doghunt.model.GameConfig;
-import com.example.doghunt.model.ItemTemplate;
-import com.example.doghunt.model.PlaceTemplate;
+import com.example.dogseek.model.ConnectionTemplate;
+import com.example.dogseek.model.GameConfig;
+import com.example.dogseek.model.ItemTemplate;
+import com.example.dogseek.model.PlaceTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.aot.hint.annotation.RegisterReflectionForBinding;
 import org.springframework.core.io.ClassPathResource;

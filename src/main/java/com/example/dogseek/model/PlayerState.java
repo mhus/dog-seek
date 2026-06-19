@@ -1,4 +1,4 @@
-package com.example.doghunt.model;
+package com.example.dogseek.model;
 
 public class PlayerState {
     private Node currentNode;

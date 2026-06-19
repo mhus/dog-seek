@@ -1,4 +1,4 @@
-package com.example.doghunt.model;
+package com.example.dogseek.model;
 
 public class Edge {
     private String name; // z.B. "Tür", "Fenster", "Feuerleiter"
