@@ -1,0 +1,94 @@
+{
+  "places": [
+    {
+      "id": "eingang",
+      "name": "Eingang",
+      "description": "Die Eingangstür des Hauses. Hier beginnt dein Abenteuer.",
+      "group": "haus_fest",
+      "connections": [
+        { "targetId": "flur_eg", "edgeName": "Tür nach innen", "locked": true, "requiredKeyId": "schluessel_eingang" }
+      ]
+    },
+    {
+      "id": "flur_eg",
+      "name": "Flur (EG)",
+      "description": "Ein langer Flur im Erdgeschoss. Hier gibt es Türen nach links und rechts, sowie eine Treppe nach oben.",
+      "group": "haus_fest",
+      "connections": [
+        { "targetId": "eingang", "edgeName": "Haustür" },
+        { "targetId": "treppe", "edgeName": "Treppe nach oben" },
+        { "slotGroup": "eg_zimmer", "edgeName": "Tür links" },
+        { "slotGroup": "eg_zimmer", "edgeName": "Tür rechts" }
+      ]
+    },
+    {
+      "id": "treppe",
+      "name": "Treppe",
+      "description": "Eine knarrende Holztreppe.",
+      "group": "haus_fest",
+      "connections": [
+        { "targetId": "flur_eg", "edgeName": "Treppe nach unten" },
+        { "targetId": "flur_og", "edgeName": "Treppe nach oben" }
+      ]
+    },
+    {
+      "id": "flur_og",
+      "name": "Flur (OG)",
+      "description": "Der Flur im Obergeschoss. Türen führen in verschiedene Richtungen.",
+      "group": "haus_fest",
+      "connections": [
+        { "targetId": "treppe", "edgeName": "Treppe nach unten" },
+        { "targetId": "bad", "edgeName": "Tür geradeaus", "locked": true, "requiredKeyId": "schluessel_bad" },
+        { "slotGroup": "og_zimmer", "edgeName": "Tür links" },
+        { "slotGroup": "og_zimmer", "edgeName": "Tür rechts" }
+      ]
+    },
+    {
+      "id": "bad",
+      "name": "Badezimmer",
+      "description": "Ein gekacheltes Badezimmer mit Badewanne.",
+      "group": "haus_fest",
+      "connections": [
+        { "targetId": "flur_og", "edgeName": "Badezimmertür" }
+      ]
+    },
+    {
+      "id": "kueche",
+      "name": "Küche",
+      "description": "Eine geflieste Küche. Es riecht nach Hundefutter.",
+      "group": "eg_zimmer"
+    },
+    {
+      "id": "wohnzimmer",
+      "name": "Wohnzimmer",
+      "description": "Ein gemütliches Wohnzimmer mit Sofa und Fernseher.",
+      "group": "eg_zimmer"
+    },
+    {
+      "id": "kinderzimmer",
+      "name": "Kinderzimmer",
+      "description": "Spielzeug liegt verstreut auf dem Boden.",
+      "group": "og_zimmer"
+    },
+    {
+      "id": "schlafzimmer",
+      "name": "Schlafzimmer",
+      "description": "Ein großes Bett und ein Kleiderschrank stehen hier.",
+      "group": "og_zimmer"
+    }
+  ],
+  "items": [
+    { "id": "schluessel_eingang", "name": "Ein schwerer eiserner Schlüssel", "description": "Ein großer, schwerer Schlüssel aus Eisen. Er wirkt alt und abgenutzt. Er passt sicher zu einer massiven Tür.", "totalCount": 1, "allowedRooms": ["eingang"] },
+    { "id": "schluessel_bad", "name": "Ein blauer Schlüssel", "description": "Ein kleinerer Schlüssel, der an einem blauen Schlüsselring hängt. Vielleicht gehört er zu einer Innentür?", "totalCount": 1, "allowedRooms": ["wohnzimmer", "kueche"] },
+    { "id": "taschenlampe", "name": "Eine kleine Taschenlampe", "description": "Eine robuste Taschenlampe. Sie leuchtet hell und hilft dir, dunkle Räume zu durchsuchen.", "totalCount": 1, "allowedRooms": ["eingang", "kueche"] },
+    { "id": "hund", "name": "Bello der Hund", "description": "Ein großer, aufgeregter Hund. Er scheint nervös zu sein und fletscht die Zähne.", "totalCount": 1, "allowedRooms": ["wohnzimmer", "schlafzimmer", "kinderzimmer"] },
+    { "id": "wurst", "name": "Eine leckere Wurst", "description": "Eine würzige Wurst. Ihr Duft könnte hungrige Hunde anlocken oder beruhigen.", "totalCount": 2, "allowedRooms": ["kueche"] },
+    { "id": "pflaster", "name": "Ein Pflaster", "description": "Ein sauberes Pflaster. Hilfreich, um kleine Wunden zu versorgen und Leben wiederherzustellen.", "totalCount": 2, "allowedRooms": ["bad", "kueche"] },
+    { "id": "wasser", "name": "Flasche Wasser", "description": "Eine frische Flasche Wasser. Ein Schluck davon erfrischt dich und stellt ein Leben wieder her.", "totalCount": 2, "allowedRooms": ["bad", "kueche"] },
+    { "id": "powerriegel", "name": "Ein Powerriegel", "description": "Ein schokoladiger Powerriegel. Hunde lieben ihn! Damit lässt sich ein nervöser Hund vielleicht anlocken und einfangen.", "totalCount": 3 },
+    { "id": "nagel", "name": "Ein rostiger Nagel", "description": "Ein alter, rostiger Nagel. Er ist spitz und sieht gefährlich aus – man könnte sich daran verletzen!", "totalCount": 3, "dangerous": true }
+  ],
+  "dogNames": [
+    "Bello", "Rex", "Struppi", "Lassie", "Hasso", "Buddy", "Charlie", "Luna", "Rocky", "Max", "Cooper", "Bruno"
+  ]
+}
