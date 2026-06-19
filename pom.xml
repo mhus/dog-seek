@@ -14,7 +14,7 @@
   <artifactId>dog-seek</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>dog-seek</name>
-  <description>Dog Hunt Text Game with Spring Boot</description>
+  <description>Dog Seek Text Game with Spring Boot</description>
 
   <properties>
     <java.version>17</java.version>
