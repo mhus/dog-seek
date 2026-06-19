@@ -1,4 +1,4 @@
-# 🐕 Dog-Hunt
+# 🐕 Dog-Seek
 
 Ein textbasiertes Konsolen-Spiel in Java mit Spring Boot: Dein Hund ist im großen,
 dunklen Haus weggelaufen. Deine Aufgabe ist es, ihn zu finden und einzufangen –
